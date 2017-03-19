@@ -22,6 +22,18 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet"/>
 
+    <script>   (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-93990549-1', 'auto');
+    ga('send', 'pageview');  </script>
 </head>
 
 <body class="index-page">
@@ -45,7 +57,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="#pablo">
+                        <a href="/cart.html">
                             <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                             Корзина
                             <div class="ripple-container"></div>
@@ -79,7 +91,8 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-1">
                 <h1>Широкий ассортимент и высокое качество</h1>
-                <p>Интернет магазин бесполезных товаров "Мне не надо" – это доступные цены, широкий, регулярно обновляемый
+                <p>Интернет магазин бесполезных товаров "Мне не надо" – это доступные цены, широкий, регулярно
+                    обновляемый
                     ассортимент. В онлайн-каталоге "Мне не надо" представлено около 3 товаров.</p>
 
             </div>
@@ -89,11 +102,23 @@
                 <div class="row">
                     <div class="col-sm-4 text-center">
 
-                        <div class="box card" style="padding: 20px;">
-                            <a href="">
-                                <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/">
-                                <h3 class="name">Товар</h3>
-                            </a>
+                        <div class="box card" style="padding: 20px;"><a href="/product.html">
+                            <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/">
+                            <h3 class="name">Товар</h3>
+                        </a>
+                            <p class="title">Цена: 00000 руб.</p>
+                            <div class="social">
+                                <a class="btn btn-primary" type="button">Купить</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+
+                        <div class="box card" style="padding: 20px;"><a href="/product.html">
+                            <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?1">
+                            <h3 class="name">Товар</h3>
+                        </a>
                             <p class="title">Цена: 00000 руб.</p>
                             <div class="social">
                                 <a class="btn btn-primary" type="button">Купить</a>
@@ -104,21 +129,7 @@
                     <div class="col-sm-4 text-center">
 
                         <div class="box card" style="padding: 20px;">
-                            <a href="">
-                                <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?1">
-                                <h3 class="name">Товар</h3>
-                            </a>
-                            <p class="title">Цена: 00000 руб.</p>
-                            <div class="social">
-                                <a class="btn btn-primary" type="button">Купить</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4 text-center">
-
-                        <div class="box card" style="padding: 20px;">
-                            <a href="">
+                            <a href="/product.html">
                                 <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?2">
                                 <h3 class="name">Товар</h3>
                             </a>
@@ -139,15 +150,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-push-6 item text">
-                            <h3>Company Name</h3>
-                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
-                                vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
-                                pulvinar dictum vel in justo.</p>
+                            <h3>Мне не надо</h3>
+                            <p>Интернет-магазин бесполезных товаров</p>
                         </div>
 
 
                     </div>
-                    <p class="copyright">Company Name © 2016</p>
+                    <p class="copyright">Мне не надо © 2017</p>
                 </div>
             </footer>
         </div>
