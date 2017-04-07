@@ -34,6 +34,13 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-93990549-1', 'auto');
     ga('send', 'pageview');  </script>
+     <script>
+    function button_buy(hhhh){
+        //alert(hhhh.attributes.href.value);
+        var label1 = hhhh.attributes.href.value + ' / from:' + document.location.href;
+        ga('send', 'event', 'button Купить', 'govno', label1);
+    }
+    </script>
 </head>
 
 <body class="index-page">
@@ -107,7 +114,7 @@
                         </a>
                             <p class="title">Цена: 00000 руб.</p>
                             <div class="social">
-                                <a class="btn btn-primary" type="button" href="/cart.html">Купить</a>
+                                <a class="btn btn-primary" type="button" href="/cart.html" onclick="button_buy(this)">Купить</a>
                             </div>
                         </div>
 
@@ -120,7 +127,7 @@
                         </a>
                             <p class="title">Цена: 00000 руб.</p>
                             <div class="social">
-                                <a class="btn btn-primary" type="button" href="/cart.html">Купить</a>
+                                <a class="btn btn-primary" type="button" href="/cart.html" onclick="button_buy(this)">Купить</a>
                             </div>
                         </div>
 
@@ -134,7 +141,7 @@
                             </a>
                             <p class="title">Цена: 00000 руб.</p>
                             <div class="social">
-                                <a class="btn btn-primary" type="button" href="/cart.html">Купить</a>
+                                <a class="btn btn-primary" type="button" href="/cart.html" onclick="button_buy(this)">Купить</a>
                             </div>
                         </div>
 
