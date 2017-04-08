@@ -46,7 +46,6 @@ ga('ecommerce:addTransaction', {
  'revenue': '1500',              // Общая стоимость заказа
  'shipping': '250',              // Стоимость доставки
  'tax': ''                     	 // Налог
-
 });
 
 // addItem метод вызывается для каждого товара (позиции) в корзине и склеивается с addTransaction по id.
@@ -59,9 +58,8 @@ ga('ecommerce:addItem', {
  'price': '750',                  // Стоимость товара
  'quantity': '2'                  // Количество товара
 });
-
 ga('ecommerce:send');             // Отправка данных
-        </script>
+    </script>
 </head>
 
 <body>
