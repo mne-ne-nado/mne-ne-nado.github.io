@@ -148,20 +148,20 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/43827199" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
-ga(function(tracker) {
-  var clientId = tracker.get('clientId');
-  ga('send', 'event', 'system', 'clientid', {
+ga(function(tracker) { //tracker - переменная, в которой лежит счетчик GA
+  var clientId = tracker.get('clientId'); //достаем clientId из счетчика GA
+  ga('send', 'event', 'system', 'clientid', { //отправляем событие в GA
   nonInteraction: true, 'dimension1': clientId
   });
-  var yaParams = {'clientid': clientId};
-  if (typeof(yaCounter43827199)=="object"){
-  yaCounter43827199.userParams(yaParams);
-  yaCounter43827199.params(yaParams);
+  var yaParams = {'clientid': clientId}; //формируемся доп параметр для ЯМ
+  if (typeof(yaCounter43827199)=="object"){ //проверяем, проинициализировалась (загрузилась) ли Метрика
+  yaCounter43827199.userParams(yaParams); //добавляем внутренний параметр к Метрике, для того, чтобы Метрика при отправке своих событий отправляла этот (clientid) параметр
+  yaCounter43827199.params(yaParams);//добавляем внутренний параметр к Метрике, для того, чтобы Метрика при отправке своих событий отправляла этот (clientid) параметр
   } else {
-  setTimeout(function() {
+  setTimeout(function() {//ждем 2 сек, если метрика не была проинициализирована
     if (typeof(yaCounter43827199)=="object"){
-    yaCounter43827199.userParams(yaParams);
-    yaCounter43827199.params(yaParams);
+    yaCounter43827199.userParams(yaParams);//добавляем внутренний параметр к Метрике, для того, чтобы Метрика при отправке своих событий отправляла этот (clientid) параметр
+    yaCounter43827199.params(yaParams);//добавляем внутренний параметр к Метрике, для того, чтобы Метрика при отправке своих событий отправляла этот (clientid) параметр
     }
   }, 2000);
 }
