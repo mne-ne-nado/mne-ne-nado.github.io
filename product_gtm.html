@@ -2,6 +2,19 @@
 <html>
 
 <head>
+    <script>
+      dataLayer.push({
+  'event': 'addToCart',
+  'ecommerce': {
+    'currencyCode': 'RUB',
+    'add': {
+      'products': [{
+        'id': '3816103',
+      }]
+    }
+  }
+});
+    </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -86,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>Артикул: 3816103 </p>
                             <p>Цвет: коралловый </p>
                             <p>Состав: вискоза 78%,полиамид 22% </p>
-                            <p><a href="/cart.html" class="btn-info btn" onclick="button_buy_product()">Купить </a></p>
+                            <button id="addToCart" class="btn btn-success">Купить</button>
                         </div>
                     </div>
                 </div>
