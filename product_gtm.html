@@ -2,19 +2,11 @@
 <html>
 
 <head>
-    <script>
-      dataLayer.push({
-  'event': 'addToCart',
-  'ecommerce': {
-    'currencyCode': 'RUB',
-    'add': {
-      'products': [{
-        'id': '3816103',
-      }]
-    }
-  }
-});
-    </script>
+
+ <script>
+  dataLayer = [];
+</script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -100,6 +92,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>Цвет: коралловый </p>
                             <p>Состав: вискоза 78%,полиамид 22% </p>
                             <button id="addToCart" class="btn btn-success">Купить</button>
+                             <script>
+                                 addToCart.onclick=function () {
+
+
+      dataLayer.push({
+            'event': 'addToCart',
+  'ecommerce': {
+    'currencyCode': 'RUB',
+    'add': {
+      'products': [{
+        'id': '3816103',
+      }]
+    }
+  }
+}); }; </script>
                         </div>
                     </div>
                 </div>
