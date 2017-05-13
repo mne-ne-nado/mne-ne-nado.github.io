@@ -163,6 +163,25 @@ ga(function(tracker) { //tracker - переменная, в которой ле�
 }
 });
 </script>
+
+<script>
+ga('require', 'ec');
+ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+  'id': '3816103 ',                   // Product ID (string).
+  'name': 'Товар', // Product name (string).
+  'variant': 'коралловый ',               // Product variant (string).
+  'price': '00000',                 // Product price (currency).
+});
+
+// Add the step number and additional info about the checkout to the action.
+ga('ec:setAction','checkout', {
+    'step': 1
+});
+
+ga('send', 'event', 'eEC', 'checkout',{nonInteraction: true});
+
+
+</script>
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
