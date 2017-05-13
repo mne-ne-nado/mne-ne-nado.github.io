@@ -76,36 +76,62 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-1">
                     <p class="breadcrumbs">Хлебные крошки: <a href="/">Главная</a> - Спасибо за заказ</p>
-                    <h1>Спасибо за заказ!</h1></div>
+                   <h1>Спасибо за заказ </h1>
+                    <p>Номер заказа 1</p>
+                </div>
             </div>
+             <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+
+                        <div class="box card" style="padding: 20px;">
+                            <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/">
+                            <h3 class="name">Товар 1</h3>
+                            <p class="title">ID: 00001</p>
+                            <p class="title">Цена: 10 руб.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+
+                        <div class="box card" style="padding: 20px;">
+                            <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?1">
+                            <h3 class="name">Товар 2</h3>
+                            <p class="title">ID: 00002</p>
+                            <p class="title">Цена: 10 руб.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
 
             <script>
 ga('require', 'ec');
 
 
 ga('ec:addProduct', {               // Provide product details in an productFieldObject.
-  'id': 'P12345',                   // Product ID (string).
-  'name': 'Android Warhol T-Shirt', // Product name (string).
-  'category': 'Apparel',            // Product category (string).
-  'brand': 'Google',                // Product brand (string).
-  'variant': 'black',               // Product variant (string).
-  'price': '29.20',                 // Product price (currency).
-  'coupon': 'APPARELSALE',          // Product coupon (string).
-  'quantity': 1                     // Product quantity (number).
+  'id': '00001',                   // Product ID (string).
+  'name': 'Товар 1', // Product name (string).
+  'price': '10',                 // Product price (currency).
 });
 
-
+ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+  'id': '00002',                   // Product ID (string).
+  'name': 'Товар 2', // Product name (string).
+  'price': '10',                 // Product price (currency).
+});
 ga('ec:setAction', 'purchase', {          // Transaction details are provided in an actionFieldObject.
-  'id': 'T12345',                         // (Required) Transaction id (string).
-  'affiliation': 'Google Store - Online', // Affiliation (string).
-  'revenue': '37.39',                     // Revenue (currency).
-  'tax': '2.85',                          // Tax (currency).
-  'shipping': '5.34',                     // Shipping (currency).
-  'coupon': 'SUMMER2013'                  // Transaction coupon (string).
+  'id': '1',                         // (Required) Transaction id (string).
+  'affiliation': 'Mne-ne-nado', // Affiliation (string).
+  'revenue': '20',                     // Revenue (currency).
 });
 
 ga('send', 'event', 'eEC', 'purchase');
 </script>
+                </div>
             <hr>
             <div style="background: darkgrey" class="footer-dark">
                 <footer>
