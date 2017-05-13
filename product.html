@@ -39,6 +39,9 @@
     ga('send','event','страница товара','product',document.location.search)
      function button_buy_product(){
         ga('send', 'event', 'button Купить Продукт', 'buy product', document.location.search);
+        ga('ec:addProduct', {'id': '3816103',   'name': 'Товар',  'variant': 'коралловый' });
+        ga('ec:setAction', 'add');
+        ga('send', 'event', 'eEC', 'add');
     }
     </script>
 
@@ -85,6 +88,15 @@
 
                     <h1>Товар </h1></div>
             </div>
+            <script>
+ga('require', 'ec');
+
+ga('ec:addProduct', {   'id': '3816103',   'name': 'Товар', 'variant': 'коралловый' });
+
+ga('ec:setAction', 'detail');
+
+ga('send', 'event', 'eEC', 'detail',{nonInteraction: true});
+</script>
             <div>
                 <div class="container">
                     <div class="row">
