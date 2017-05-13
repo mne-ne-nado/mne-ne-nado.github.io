@@ -110,9 +110,10 @@
 
                         <div class="box card" style="padding: 20px;"><a href="/product.html?=1">
                             <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/">
-                            <h3 class="name">Товар</h3>
+                            <h3 class="name">Товар 1</h3>
                         </a>
-                            <p class="title">Цена: 00000 руб.</p>
+                            <p class="title">ID: 1111 </p>
+                            <p class="title">Цена: 10 руб.</p>
                             <div class="social">
                                 <a class="btn btn-primary" type="button" href="/cart.html?=1" onclick="button_buy(this)">Купить</a>
                             </div>
@@ -123,9 +124,10 @@
 
                         <div class="box card" style="padding: 20px;"><a href="/product.html?=2">
                             <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?1">
-                            <h3 class="name">Товар</h3>
+                            <h3 class="name">Товар 2</h3>
                         </a>
-                            <p class="title">Цена: 00000 руб.</p>
+                            <p class="title">ID: 1112 </p>
+                            <p class="title">Цена: 20 руб.</p>
                             <div class="social">
                                 <a class="btn btn-primary" type="button" href="/cart.html?=2" onclick="button_buy(this)">Купить</a>
                             </div>
@@ -136,9 +138,10 @@
 
                         <div class="box card" style="padding: 20px;"><a href="/product.html?=3">
                             <img class="img-thumbnail" src="http://lorempixel.com/150/150/sports/?2">
-                            <h3 class="name">Товар</h3>
+                            <h3 class="name">Товар 3</h3>
                         </a>
-                            <p class="title">Цена: 00000 руб.</p>
+                            <p class="title">ID: 1113 </p>
+                            <p class="title">Цена: 30 руб.</p>
                             <div class="social">
                                 <a class="btn btn-primary" type="button" href="/cart.html?=3" onclick="button_buy(this)">Купить</a>
                             </div>
@@ -219,6 +222,36 @@ ga(function(tracker) { //tracker - переменная, в которой ле�
   }, 2000);
 }
 });
+</script>
+
+<script>
+ga('require', 'ec');
+
+ga('ec:addImpression', {
+  'id': '1111',                   // Product details are provided in an impressionFieldObject.
+  'name': 'Товар 1',
+  'list': 'catalog',
+    'price': '10'
+  'position': 1                     // 'position' indicates the product position in the list.
+});
+
+ga('ec:addImpression', {
+  'id': '1112',
+  'name': 'Товар 2',
+  'price': '20',
+  'list': 'catalog',
+  'position': 2
+});
+
+ga('ec:addImpression', {
+  'id': '1113',
+  'name': 'Товар 3',
+  'price': '20',
+  'list': 'catalog',
+  'position': 3
+});
+
+ga('send', 'event', 'eEC', 'list',{nonInteraction: true});
 </script>
 </body>
 <!--   Core JS Files   -->

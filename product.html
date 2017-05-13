@@ -39,7 +39,7 @@
     ga('send','event','страница товара','product',document.location.search)
      function button_buy_product(){
         ga('send', 'event', 'button Купить Продукт', 'buy product', document.location.search);
-        ga('ec:addProduct', {'id': '3816103',   'name': 'Товар',  'variant': 'коралловый' });
+        ga('ec:addProduct', {'id': '3816103',   'name': 'Товар', 'price': '10', 'variant': 'коралловый' });
         ga('ec:setAction', 'add');
         ga('send', 'event', 'eEC', 'add');
     }
@@ -102,7 +102,7 @@ ga('send', 'event', 'eEC', 'detail',{nonInteraction: true});
                     <div class="row">
                         <div class="col-md-6"><img src="http://lorempixel.com/400/400/sports/"></div>
                         <div class="col-md-6">
-                            <p style="font-size:large;color:rgb(191,43,43);">Цена: 00000 руб.</p>
+                            <p style="font-size:large;color:rgb(191,43,43);">Цена: 10 руб.</p>
                             <p>Артикул: 3816103 </p>
                             <p>Цвет: коралловый </p>
                             <p>Состав: вискоза 78%,полиамид 22% </p>
