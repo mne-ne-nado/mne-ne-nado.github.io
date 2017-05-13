@@ -37,29 +37,7 @@
     ga('send', 'pageview');
     </script>
 
-    <script>
-        ga('require', 'ecommerce');
-ga('ecommerce:addTransaction', {
 
- 'id': '1234',                   // ID заказа
- 'affiliation': 'example.com',   // Название магазина
- 'revenue': '1500',              // Общая стоимость заказа
- 'shipping': '250',              // Стоимость доставки
- 'tax': ''                     	 // Налог
-});
-
-// addItem метод вызывается для каждого товара (позиции) в корзине и склеивается с addTransaction по id.
-
-ga('ecommerce:addItem', {
- 'id': '1234',                    // ID заказа
- 'name': 'Mouse Logitech',        // Название товара
- 'sku': 'AAA000',                 // Артикул или SKU
- 'category': 'Wireless',          // Размер, модель, категория или еще какая-то информация
- 'price': '750',                  // Стоимость товара
- 'quantity': '2'                  // Количество товара
-});
-ga('ecommerce:send');             // Отправка данных
-    </script>
 </head>
 
 <body>
@@ -100,6 +78,33 @@ ga('ecommerce:send');             // Отправка данных
                     <p class="breadcrumbs">Хлебные крошки: <a href="/">Главная</a> - Спасибо за заказ</p>
                     <h1>Спасибо за заказ!</h1></div>
             </div>
+
+            <script>
+ga('require', 'ec');
+
+
+ga('ec:addProduct', {               // Provide product details in an productFieldObject.
+  'id': 'P12345',                   // Product ID (string).
+  'name': 'Android Warhol T-Shirt', // Product name (string).
+  'category': 'Apparel',            // Product category (string).
+  'brand': 'Google',                // Product brand (string).
+  'variant': 'black',               // Product variant (string).
+  'price': '29.20',                 // Product price (currency).
+  'coupon': 'APPARELSALE',          // Product coupon (string).
+  'quantity': 1                     // Product quantity (number).
+});
+
+
+ga('ec:setAction', 'purchase', {          // Transaction details are provided in an actionFieldObject.
+  'id': 'T12345',                         // (Required) Transaction id (string).
+  'affiliation': 'Google Store - Online', // Affiliation (string).
+  'revenue': '37.39',                     // Revenue (currency).
+  'tax': '2.85',                          // Tax (currency).
+  'shipping': '5.34',                     // Shipping (currency).
+  'coupon': 'SUMMER2013'                  // Transaction coupon (string).
+});
+
+ga('send', 'event', 'eEC', 'purchase');
             <div></div>
             <hr>
             <div style="background: darkgrey" class="footer-dark">
