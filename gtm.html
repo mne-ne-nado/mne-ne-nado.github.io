@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="main main-raised">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-1">
-                    <h1>GTM</h1></div>
+                    <h1>GTM Спасибо за заказ</h1></div>
                 <div>
             <div class="container">
                 <div class="row">
@@ -96,6 +96,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             </div>
+                <script>
+(dataLayer = window.dataLayer || []).push({
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'id': 'T12345',
+        'affiliation': 'Online Store',
+        'revenue': '35.43',
+        'tax':'4.90',
+        'shipping': '5.99',
+        'coupon': 'SUMMER_SALE'
+      },
+      'products': [{
+        'name': 'Triblend Android T-Shirt',
+        'id': '12345',
+        'price': '15.25',
+        'brand': 'Google',
+        'category': 'Apparel',
+        'variant': 'Gray',
+        'quantity': 1,
+        'coupon': ''
+       },
+       {
+        'name': 'Donut Friday Scented T-Shirt',
+        'id': '67890',
+        'price': '33.75',
+        'brand': 'Google',
+        'category': 'Apparel',
+        'variant': 'Black',
+        'quantity': 1
+       }]
+    }
+  },
+    'event': 'GAEventEC',
+	'eCategory':'eEC',
+    'eAction':'purchase',
+    'eLabel':'',
+    'eNI':'0',
+});
+</script>
             <div></div>
             <hr>
             <div style="background: darkgrey" class="footer-dark">
